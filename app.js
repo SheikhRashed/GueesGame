@@ -44,8 +44,12 @@ guessBtn.addEventListener('click',() =>{
     } else {
       // Game continues - answer wrong
       guessInput.style.borderColor = 'red';
+
+      setMessage(`${guess} is not Correct, ${guessesLeft} guesses Left`,'skyblue');
       // clear Input 
       guessInput.value = '';
+
+     
     }
   }  
 });
